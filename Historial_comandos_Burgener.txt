@@ -1,0 +1,109 @@
+ls -l
+clean
+clear
+echo $HOME
+man man
+man pwd
+pwd
+whoami
+ls
+ls -l
+ls -la
+mkdir clase4
+ls -l
+cd clase4
+pwd
+cat > archivo1.txt
+ls -l
+cat archivo1.txt 
+cat > archivo2.txt
+ls -l
+cat archivo2.txt
+cat *.txt
+cat archivo1.txt archivo2.txt > archivo3.txt
+ls -l
+cat archivo3.txt 
+cd ..
+cd clase4/
+cd -
+ssh-keygen -t ed25519
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub
+cd ..
+pwd
+ls -l
+cd repogit/
+ls -l
+git clone git@github.com:thiagoburgener/vmvagrant_repo.git
+cd vmvagrant_repo/
+ls -l
+cat README.md 
+echo "Archivo de prueba"
+echo "Archivo de prueba" > prueba.txt
+ls -l
+cat prueba.txt 
+git status
+git add .
+git status
+git commit -m "agrego archivo prueba.txt"
+git config --global user.name "thiagoburgener"
+git commit -m "agrego archivo prueba.txt"
+git status
+ls -l
+git push
+cd ..
+exit
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+ssh-keygen -lf $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:thiagoburgener/TP1_AySO_Burgener_Thiago.git
+cd TP1_AySO_Burgener_Thiago/
+pwd
+ls -l
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add .
+git commit -m "ADD: agregado 1er
+ejercicio sobre datos_usuario.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+git push
+cat <<EOF >> README.md
+Alumno: Tu-Nombre
+División: Tu-División
+Turno: Tu-Turno
+nano README.md
+EOF
+
+cd repogit/TP1_AySO_Burgener_Thiago
+cat README.md
+git add README.md datos_usuarios.txt
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+pwd
+cd
+pwd
+mkdir -p materia1/{uni1,uni2,uni3} materia2/{uni1,uni2,uni3}
+ls -R materia1 materia2
+cd repogit/TP1_AySO_Burgener_Thiago
+echo "mkdir -p materia1/{uni1,uni2,uni3} materia2/{uni1,uni2,uni3}" > script_dir.sh
+chmod +x script_dir.sh
+git add .
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
